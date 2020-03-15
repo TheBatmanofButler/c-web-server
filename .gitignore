@@ -1,3 +1,12 @@
+# ignore/blacklist everything
+*
+
+# DO NOT blacklist any filename with any extension. Basically boils down to do not ignore any file.
+!*.*
+
+# DO NOT blacklist any directory. The / at last means we are dealing with directory.
+!*/
+
 # Prerequisites
 *.d
 
@@ -50,3 +59,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# vscode
+.vscode/
